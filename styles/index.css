@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+/* Card Layout */
+.section-card {
+  border: 2px solid #000000;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Pastel Colors */
+.pastel-green {
+  background-color: #dff5ea;
+}
+
+.pastel-blue {
+  background-color: #e3f0ff;
+}
+
+.pastel-pink {
+  background-color: #fde2ea;
+}
+
+.pastel-yellow {
+  background-color: #fff6d8;
+}
+
+.pastel-purple {
+  background-color: #efe6ff;
+}
+
+/* Headings */
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .section-card {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    }
+/* Links */
+a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* Buttons */
+button {
+  background-color: #1a73e8;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #155ab6;
+}
+/* Lists */
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+li {
+  margin-bottom: 8px;
+}
