@@ -1,13 +1,13 @@
 /* Global Styles */
 body {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
 }
 
 /* Card Layout */
 .section-card {
-  border: 2px solid #000000;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
@@ -15,23 +15,23 @@ body {
 
 /* Pastel Colors */
 .pastel-green {
-  background-color: #dff5ea;
+  background-color: rgb(223, 245, 234);
 }
 
 .pastel-blue {
-  background-color: #e3f0ff;
+  background-color: rgb(227, 240, 255);
 }
 
 .pastel-pink {
-  background-color: #fde2ea;
+  background-color: rgb(253, 226, 234);
 }
 
 .pastel-yellow {
-  background-color: #fff6d8;
+  background-color: rgb(255, 246, 216);
 }
 
 .pastel-purple {
-  background-color: #efe6ff;
+  background-color: rgb(239, 230, 255);
 }
 
 /* Headings */
@@ -63,7 +63,7 @@ h2 {
     }
 /* Links */
 a {
-  color: #1a0dab;
+  color: rgb(26, 13, 171);
   text-decoration: none;
 }
 a:hover {
@@ -71,15 +71,15 @@ a:hover {
 }
 /* Buttons */
 button {
-  background-color: #1a73e8;
-  color: #ffffff;
+  background-color: rgb(26, 115, 232);
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
 }
 button:hover {
-  background-color: #155ab6;
+  background-color: rgb(21, 90, 182);
 }
 /* Lists */
 ul, ol {
