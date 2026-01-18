@@ -73,89 +73,372 @@
       <!-- Daily Tasks -->
       <div class="section-card pastel-green">
         <h2>🗓️ Daily Tasks</h2>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="daily1" />
-          <label class="form-check-label" for="daily1"
-            >Prepare meals & snacks</label
-          >
+          <label class="form-check-label" for="daily1">
+            Prepare meals & snacks
+          </label>
         </div>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="daily2" />
-          <label class="form-check-label" for="daily2"
-            >School drop-off / pickup</label
-          >
+          <label class="form-check-label" for="daily2">
+            School drop-off / pickup
+          </label>
         </div>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="daily3" />
           <label class="form-check-label" for="daily3">Homework check</label>
         </div>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="daily4" />
           <label class="form-check-label" for="daily4">Bedtime routine</label>
         </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="daily5" />
+          <label class="form-check-label" for="daily5">
+            Hygiene routine (brush teeth, wash face)
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="daily6" />
+          <label class="form-check-label" for="daily6">
+            Reading time / bedtime story
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="daily7" />
+          <label class="form-check-label" for="daily7">
+            Encourage outdoor play
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="daily8" />
+          <label class="form-check-label" for="daily8">
+            Pack backpack for next day
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="daily9" />
+          <label class="form-check-label" for="daily9">
+            Check/refresh water bottle
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="daily10" />
+          <label class="form-check-label" for="daily10">
+            Encourage positive behavior / praise
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="daily11" />
+          <label class="form-check-label" for="daily11">Other</label>
+        </div>
+
+        <input
+          type="text"
+          class="form-control mt-2"
+          id="dailyOther"
+          placeholder="Enter daily task"
+          disabled
+        />
+
+        <button class="btn btn-outline-danger mt-3" id="resetDailyTasks">
+          Reset Daily Tasks
+        </button>
       </div>
 
       <!-- Weekly Tasks -->
       <div class="section-card pastel-blue">
         <h2>📆 Weekly Tasks</h2>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="weekly1" />
-          <label class="form-check-label" for="weekly1"
-            >Plan school lunches</label
-          >
+          <label class="form-check-label" for="weekly1">
+            Plan school lunches
+          </label>
         </div>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="weekly2" />
-          <label class="form-check-label" for="weekly2"
-            >Wash school clothes</label
-          >
+          <label class="form-check-label" for="weekly2">
+            Wash school clothes
+          </label>
         </div>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="weekly3" />
-          <label class="form-check-label" for="weekly3"
-            >Review school communications</label
-          >
+          <label class="form-check-label" for="weekly3">
+            Review school communications
+          </label>
         </div>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="weekly4" />
-          <label class="form-check-label" for="weekly4"
-            >Family check-in time</label
-          >
+          <label class="form-check-label" for="weekly4">
+            Family check-in time
+          </label>
         </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="weekly5" />
+          <label class="form-check-label" for="weekly5">
+            Clean school bags & lunch boxes
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="weekly6" />
+          <label class="form-check-label" for="weekly6">
+            Wash bedding & towels
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="weekly7" />
+          <label class="form-check-label" for="weekly7">
+            Check and restock school supplies
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="weekly8" />
+          <label class="form-check-label" for="weekly8">
+            Review screen time limits
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="weekly9" />
+          <label class="form-check-label" for="weekly9">
+            Plan family activity / outing
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="weekly10" />
+          <label class="form-check-label" for="weekly10">Other</label>
+        </div>
+
+        <input
+          type="text"
+          class="form-control mt-2"
+          id="weeklyOther"
+          placeholder="Enter weekly task"
+          disabled
+        />
+
+        <button class="btn btn-outline-danger mt-3" id="resetWeeklyTasks">
+          Reset Weekly Tasks
+        </button>
       </div>
 
       <!-- Monthly Tasks -->
       <div class="section-card pastel-purple">
         <h2>🗂️ Monthly Tasks</h2>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="monthly1" />
-          <label class="form-check-label" for="monthly1"
-            >Doctor or dental appointments</label
-          >
+          <label class="form-check-label" for="monthly1">
+            Doctor or dental appointments
+          </label>
         </div>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="monthly2" />
-          <label class="form-check-label" for="monthly2"
-            >Update clothing sizes</label
-          >
+          <label class="form-check-label" for="monthly2">
+            Update clothing sizes
+          </label>
         </div>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="monthly3" />
-          <label class="form-check-label" for="monthly3"
-            >Review activities & schedules</label
-          >
+          <label class="form-check-label" for="monthly3">
+            Review activities & schedules
+          </label>
         </div>
+
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="monthly4" />
-          <label class="form-check-label" for="monthly4"
-            >One-on-one quality time</label
-          >
+          <label class="form-check-label" for="monthly4">
+            One-on-one quality time
+          </label>
         </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="monthly5" />
+          <label class="form-check-label" for="monthly5">
+            Review growth milestones
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="monthly6" />
+          <label class="form-check-label" for="monthly6">
+            Check/replace school shoes
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="monthly7" />
+          <label class="form-check-label" for="monthly7">
+            Review allowance / chore rewards
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="monthly8" />
+          <label class="form-check-label" for="monthly8">
+            Check emergency contact info
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="monthly9" />
+          <label class="form-check-label" for="monthly9">
+            Update school calendar & events
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="monthly10" />
+          <label class="form-check-label" for="monthly10">Other</label>
+        </div>
+
+        <input
+          type="text"
+          class="form-control mt-2"
+          id="monthlyOther"
+          placeholder="Enter monthly task"
+          disabled
+        />
+
+        <button class="btn btn-outline-danger mt-3" id="resetMonthlyTasks">
+          Reset Monthly Tasks
+        </button>
       </div>
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Logic -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        // Restore checkbox states
+        checkboxes.forEach((cb) => {
+          cb.checked = localStorage.getItem(cb.id) === "true";
+        });
+
+        // DAILY OTHER
+        const dailyOtherCheckbox = document.getElementById("daily11");
+        const dailyOtherInput = document.getElementById("dailyOther");
+
+        dailyOtherInput.disabled = !dailyOtherCheckbox.checked;
+        dailyOtherInput.value = localStorage.getItem("dailyOther") || "";
+
+        dailyOtherCheckbox.addEventListener("change", () => {
+          dailyOtherInput.disabled = !dailyOtherCheckbox.checked;
+          if (!dailyOtherCheckbox.checked) {
+            dailyOtherInput.value = "";
+            localStorage.removeItem("dailyOther");
+          }
+        });
+
+        dailyOtherInput.addEventListener("input", () => {
+          localStorage.setItem("dailyOther", dailyOtherInput.value);
+        });
+
+        // WEEKLY OTHER
+        const weeklyOtherCheckbox = document.getElementById("weekly10");
+        const weeklyOtherInput = document.getElementById("weeklyOther");
+
+        weeklyOtherInput.disabled = !weeklyOtherCheckbox.checked;
+        weeklyOtherInput.value = localStorage.getItem("weeklyOther") || "";
+
+        weeklyOtherCheckbox.addEventListener("change", () => {
+          weeklyOtherInput.disabled = !weeklyOtherCheckbox.checked;
+          if (!weeklyOtherCheckbox.checked) {
+            weeklyOtherInput.value = "";
+            localStorage.removeItem("weeklyOther");
+          }
+        });
+
+        weeklyOtherInput.addEventListener("input", () => {
+          localStorage.setItem("weeklyOther", weeklyOtherInput.value);
+        });
+
+        // MONTHLY OTHER
+        const monthlyOtherCheckbox = document.getElementById("monthly10");
+        const monthlyOtherInput = document.getElementById("monthlyOther");
+
+        monthlyOtherInput.disabled = !monthlyOtherCheckbox.checked;
+        monthlyOtherInput.value = localStorage.getItem("monthlyOther") || "";
+
+        monthlyOtherCheckbox.addEventListener("change", () => {
+          monthlyOtherInput.disabled = !monthlyOtherCheckbox.checked;
+          if (!monthlyOtherCheckbox.checked) {
+            monthlyOtherInput.value = "";
+            localStorage.removeItem("monthlyOther");
+          }
+        });
+
+        monthlyOtherInput.addEventListener("input", () => {
+          localStorage.setItem("monthlyOther", monthlyOtherInput.value);
+        });
+
+        // Save checkbox changes
+        checkboxes.forEach((cb) => {
+          cb.addEventListener("change", () => {
+            localStorage.setItem(cb.id, cb.checked);
+          });
+        });
+
+        // Reset buttons
+        document.getElementById("resetDailyTasks").addEventListener("click", () => {
+          document.querySelectorAll('[id^="daily"]').forEach((cb) => {
+            cb.checked = false;
+            localStorage.removeItem(cb.id);
+          });
+          dailyOtherInput.value = "";
+          dailyOtherInput.disabled = true;
+          localStorage.removeItem("dailyOther");
+        });
+
+        document.getElementById("resetWeeklyTasks").addEventListener("click", () => {
+          document.querySelectorAll('[id^="weekly"]').forEach((cb) => {
+            cb.checked = false;
+            localStorage.removeItem(cb.id);
+          });
+          weeklyOtherInput.value = "";
+          weeklyOtherInput.disabled = true;
+          localStorage.removeItem("weeklyOther");
+        });
+
+        document.getElementById("resetMonthlyTasks").addEventListener("click", () => {
+          document.querySelectorAll('[id^="monthly"]').forEach((cb) => {
+            cb.checked = false;
+            localStorage.removeItem(cb.id);
+          });
+          monthlyOtherInput.value = "";
+          monthlyOtherInput.disabled = true;
+          localStorage.removeItem("monthlyOther");
+        });
+      });
+    </script>
+
     <footer>
       <div class="container text-center py-3">
         <p class="mb-0">&copy; 2024 Parent Guide. All rights reserved.</p>
