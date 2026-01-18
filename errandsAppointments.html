@@ -1,134 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Errands & Appointments | Parent Guide</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Errands & Appointments | Parent Guide</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg pastel-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Parent Guide</a>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg pastel-navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Parent Guide</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#parentNavbar"
+          aria-controls="parentNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#parentNavbar"
-        aria-controls="parentNavbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="collapse navbar-collapse" id="parentNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="household.html">Household</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="children.html">Children</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="errandsAppointments.html"
+                >Errands & Appointments</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="funFamilyTime.html"
+                >Fun & Family Time</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="parentSelfCare.html"
+                >Parent & Self-Care</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <div class="collapse navbar-collapse" id="parentNavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="children.html">Children</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="household.html">Household</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="errandsAppointments.html">Errands & Appointments</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="funFamilyTime.html">Fun & Family Time</a>
-          </li>
-          <li>
-            <a class="nav-link" href="parentSelfCare.html">Parent & Self-Care</a>
-          </li>
-        </ul>
+    <!-- Page Content -->
+    <div class="container py-4">
+      <header class="text-center mb-4">
+        <h1>Errands & Appointments</h1>
+        <p class="lead">Track important tasks, appointments, and planning</p>
+      </header>
+
+      <!-- Daily Tasks -->
+      <div class="section-card pastel-green">
+        <h2>📌 Daily Tasks</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandDaily1" />
+          <label class="form-check-label" for="errandDaily1"
+            >Check calendar for appointments</label
+          >
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandDaily2" />
+          <label class="form-check-label" for="errandDaily2"
+            >Run urgent errands</label
+          >
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandDaily3" />
+          <label class="form-check-label" for="errandDaily3"
+            >Prepare items needed for next day</label
+          >
+        </div>
+      </div>
+
+      <!-- Weekly Tasks -->
+      <div class="section-card pastel-yellow">
+        <h2>🗓️ Weekly Tasks</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandWeekly1" />
+          <label class="form-check-label" for="errandWeekly1"
+            >Schedule upcoming appointments</label
+          >
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandWeekly2" />
+          <label class="form-check-label" for="errandWeekly2"
+            >Grocery & supply runs</label
+          >
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandWeekly3" />
+          <label class="form-check-label" for="errandWeekly3"
+            >Confirm appointments & events</label
+          >
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandWeekly4" />
+          <label class="form-check-label" for="errandWeekly4"
+            >Review upcoming week</label
+          >
+        </div>
+      </div>
+
+      <!-- Monthly Tasks -->
+      <div class="section-card pastel-purple">
+        <h2>📂 Monthly Tasks</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandMonthly1" />
+          <label class="form-check-label" for="errandMonthly1"
+            >Plan medical & school appointments</label
+          >
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandMonthly2" />
+          <label class="form-check-label" for="errandMonthly2"
+            >Review bills & subscriptions</label
+          >
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandMonthly3" />
+          <label class="form-check-label" for="errandMonthly3"
+            >Update family calendar</label
+          >
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="errandMonthly4" />
+          <label class="form-check-label" for="errandMonthly4"
+            >Plan next month’s priorities</label
+          >
+        </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Page Content -->
-  <div class="container py-4">
-
-    <header class="text-center mb-4">
-      <h1>Errands & Appointments</h1>
-      <p class="lead">Track important tasks, appointments, and planning</p>
-    </header>
-
-    <!-- Daily Tasks -->
-    <div class="section-card pastel-green">
-      <h2>📌 Daily Tasks</h2>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandDaily1">
-        <label class="form-check-label" for="errandDaily1">Check calendar for appointments</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandDaily2">
-        <label class="form-check-label" for="errandDaily2">Run urgent errands</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandDaily3">
-        <label class="form-check-label" for="errandDaily3">Prepare items needed for next day</label>
-      </div>
-    </div>
-
-    <!-- Weekly Tasks -->
-    <div class="section-card pastel-yellow">
-      <h2>🗓️ Weekly Tasks</h2>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandWeekly1">
-        <label class="form-check-label" for="errandWeekly1">Schedule upcoming appointments</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandWeekly2">
-        <label class="form-check-label" for="errandWeekly2">Grocery & supply runs</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandWeekly3">
-        <label class="form-check-label" for="errandWeekly3">Confirm appointments & events</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandWeekly4">
-        <label class="form-check-label" for="errandWeekly4">Review upcoming week</label>
-      </div>
-    </div>
-
-    <!-- Monthly Tasks -->
-    <div class="section-card pastel-purple">
-      <h2>📂 Monthly Tasks</h2>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandMonthly1">
-        <label class="form-check-label" for="errandMonthly1">Plan medical & school appointments</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandMonthly2">
-        <label class="form-check-label" for="errandMonthly2">Review bills & subscriptions</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandMonthly3">
-        <label class="form-check-label" for="errandMonthly3">Update family calendar</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="errandMonthly4">
-        <label class="form-check-label" for="errandMonthly4">Plan next month’s priorities</label>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<footer>
-    <div class="container text-center py-3">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+      <div class="container text-center py-3">
         <p class="mb-0">&copy; 2024 Parent Guide. All rights reserved.</p>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

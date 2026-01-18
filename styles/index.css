@@ -15,7 +15,7 @@ body {
 .section-card {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 12px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0);
+  box-shadow: 2px 2px 8px rgb(0, 0, 0);
   padding: 20px;
   margin-bottom: 20px;
   /* background-color removed to allow pastel classes to work */
@@ -40,6 +40,18 @@ h1, h2 {
 
 h1 { font-size: 2.5em; }
 h2 { font-size: 2em; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+    font-size: larger;
+}
+
+
+
 
 /* =========================
    Mobile Responsiveness
@@ -98,4 +110,10 @@ h2 { font-size: 2em; }
 /* Hamburger Icon */
 .navbar-toggler-icon {
   filter: invert(0);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
