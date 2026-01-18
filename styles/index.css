@@ -15,6 +15,7 @@ body {
 .section-card {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0);
   padding: 20px;
   margin-bottom: 20px;
   /* background-color removed to allow pastel classes to work */
