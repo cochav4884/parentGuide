@@ -3,16 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fun & Family Time | Parent Guide</title>
+    <title>Parent Guide</title>
 
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <!-- Navigation omitted for brevity (same as others) -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg pastel-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Parent Guide</a>
+
+        <!-- Hamburger Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#parentNavbar"
+          aria-controls="parentNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Menu -->
+        <div class="collapse navbar-collapse" id="parentNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="household.html">Household</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="children.html">Children</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="errandsAppointments.html"
+                >Errands & Appointments</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="funFamilyTime.html"
+                >Fun & Family Time</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="parentSelfCare.html"
+                >Parent & Self-Care</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="container py-4">
       <header class="text-center mb-4">
@@ -47,7 +99,7 @@
           disabled
         />
 
-        <button class="btn btn-outline-danger mt-3" id="resetFunDaily">
+        <button type="button" class="btn btn-outline-danger mt-3" id="resetFunDaily">
           Reset Daily Fun
         </button>
       </div>
@@ -79,7 +131,7 @@
           disabled
         />
 
-        <button class="btn btn-outline-danger mt-3" id="resetFunWeekly">
+        <button type="button" class="btn btn-outline-danger mt-3" id="resetFunWeekly">
           Reset Weekly Fun
         </button>
       </div>
@@ -111,7 +163,7 @@
           disabled
         />
 
-        <button class="btn btn-outline-danger mt-3" id="resetFunMonthly">
+        <button type="button" class="btn btn-outline-danger mt-3" id="resetFunMonthly">
           Reset Monthly Fun
         </button>
       </div>
