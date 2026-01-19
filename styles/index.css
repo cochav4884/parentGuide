@@ -131,6 +131,12 @@ a:hover {
   filter: invert(0);
 }
 
+.navbar-logo {
+  width: 35px;
+  height: auto;
+  border-radius: 8px;
+}
+
 img {
   max-width: 100%;
   height: auto;
