@@ -399,10 +399,53 @@
       });
     </script>
 
-    <footer>
-      <div class="container text-center py-3">
-        <p class="mb-0">&copy; 2024 Parent Guide. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-brand">
+            <p class="footer-title">Parent Guide</p>
+            <p class="footer-subtitle">
+              Supporting parents with practical tools & gentle self-care.
+            </p>
+            <p class="footer-creator">Creator / Designer</p>
+            <p class="footer-name">Corinne Padilla</p>
+            <a
+              href="https://www.linkedin.com/in/corinne-padilla-3ba8bb238/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              <i class="fab fa-linkedin fa-2x"></i> LinkedIn
+            </a>
+          </div>
+
+        <div class="footer-links">
+          <a href="privacyPolicy.html" class="footer-link-simple"
+            >Privacy Policy</a
+          >
+          <span class="footer-divider">|</span>
+          <a href="disclaimer.html" class="footer-link-simple"
+            >Legal Disclaimer</a
+          >
+           <p class="mb-0">&copy; 2024 Parent Guide. All rights reserved.</p>
+        </div>
+
+        <div class="footer-bottom">
+          <button type="button" id="backToTop" class="back-to-top">
+            <i class="fas fa-arrow-up"></i> Back to Top
+          </button>
+         
+        </div>
       </div>
     </footer>
+
+    <script>
+      const backToTop = document.getElementById("backToTop");
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
+
