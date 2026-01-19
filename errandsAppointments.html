@@ -709,7 +709,9 @@
             document.querySelectorAll(`[id^="${prefix}"]`).forEach((el) => {
               if (el.type === "checkbox") el.checked = false;
               if (el.tagName === "INPUT") el.value = "";
-              if (el.disabled !== undefined) el.disabled = true;
+              if (el.dataset.other === "true") {
+                el.disabled = true;
+              }
             });
           });
 
