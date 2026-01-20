@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-   <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parent Guide</title>
@@ -40,10 +40,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg pastel-navbar">
       <div class="container-fluid">
-         <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="images/favicon.jpg" alt="Purple lily blossom with visible stamens and pistil, detailed watercolor-style illustration centered on a white background conveying a calm, elegant, uplifting tone" class="navbar-logo" />
-      <span class="ms-2">Parent Guide</span>
-    </a>
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="images/favicon.jpg"
+            alt="Purple lily blossom with visible stamens and pistil, detailed watercolor-style illustration centered on a white background conveying a calm, elegant, uplifting tone"
+            class="navbar-logo"
+          />
+          <span class="ms-2">Parent Guide</span>
+        </a>
 
         <button
           class="navbar-toggler"
@@ -468,6 +472,26 @@
           });
         });
 
+        // MONTHLY OTHER
+        const monthlyOtherCheckbox = document.getElementById("houseMonthly10");
+        const monthlyOtherInput = document.getElementById("houseMonthlyOther");
+
+        monthlyOtherInput.disabled = !monthlyOtherCheckbox.checked;
+        monthlyOtherInput.value =
+          localStorage.getItem("houseMonthlyOther") || "";
+
+        monthlyOtherCheckbox.addEventListener("change", () => {
+          monthlyOtherInput.disabled = !monthlyOtherCheckbox.checked;
+          if (!monthlyOtherCheckbox.checked) {
+            monthlyOtherInput.value = "";
+            localStorage.removeItem("houseMonthlyOther");
+          }
+        });
+
+        monthlyOtherInput.addEventListener("input", () => {
+          localStorage.setItem("houseMonthlyOther", monthlyOtherInput.value);
+        });
+
         // Reset buttons
         document
           .getElementById("resetDailyTasks")
@@ -492,50 +516,66 @@
             weeklyOtherInput.disabled = true;
             localStorage.removeItem("houseWeeklyOther");
           });
+
+        document
+          .getElementById("resetMonthlyTasks")
+          .addEventListener("click", () => {
+            document.querySelectorAll('[id^="houseMonthly"]').forEach((cb) => {
+              cb.checked = false;
+              localStorage.removeItem(cb.id);
+            });
+            monthlyOtherInput.value = "";
+            monthlyOtherInput.disabled = true;
+            localStorage.removeItem("houseMonthlyOther");
+          });
       });
     </script>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row align-items-center">
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Brand / Creator -->
+          <div class="col-12 col-md-6 footer-brand">
+            <p class="footer-title">Parent Guide</p>
+            <p class="footer-subtitle">
+              Supporting parents with practical tools & gentle self-care.
+            </p>
+            <p class="footer-creator">Creator / Designer</p>
+            <p class="footer-name">Corinne Padilla</p>
+            <a
+              href="https://www.linkedin.com/in/corinne-padilla-3ba8bb238/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              <i class="fab fa-linkedin fa-2x"></i> LinkedIn
+            </a>
+          </div>
 
-      <!-- Brand / Creator -->
-      <div class="col-12 col-md-6 footer-brand">
-        <p class="footer-title">Parent Guide</p>
-        <p class="footer-subtitle">
-          Supporting parents with practical tools & gentle self-care.
-        </p>
-        <p class="footer-creator">Creator / Designer</p>
-        <p class="footer-name">Corinne Padilla</p>
-        <a
-          href="https://www.linkedin.com/in/corinne-padilla-3ba8bb238/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="footer-link"
-        >
-          <i class="fab fa-linkedin fa-2x"></i> LinkedIn
-        </a>
+          <!-- Links -->
+          <div class="col-12 col-md-3 footer-links text-center">
+            <a href="privacyPolicy.html" class="footer-link-simple"
+              >Privacy Policy</a
+            >
+            <span class="footer-divider">|</span>
+            <a href="disclaimer.html" class="footer-link-simple"
+              >Legal Disclaimer</a
+            >
+          </div>
+
+          <!-- Back to Top -->
+          <div class="col-12 col-md-3 footer-bottom text-center">
+            <button type="button" id="backToTop" class="back-to-top">
+              <i class="fas fa-arrow-up"></i> Back to Top
+            </button>
+            <p class="mb-0 mt-2">
+              &copy; 2024 Parent Guide. All rights reserved.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <!-- Links -->
-      <div class="col-12 col-md-3 footer-links text-center">
-        <a href="privacyPolicy.html" class="footer-link-simple">Privacy Policy</a>
-        <span class="footer-divider">|</span>
-        <a href="disclaimer.html" class="footer-link-simple">Legal Disclaimer</a>
-      </div>
-
-      <!-- Back to Top -->
-      <div class="col-12 col-md-3 footer-bottom text-center">
-        <button type="button" id="backToTop" class="back-to-top">
-          <i class="fas fa-arrow-up"></i> Back to Top
-        </button>
-        <p class="mb-0 mt-2">&copy; 2024 Parent Guide. All rights reserved.</p>
-      </div>
-
-    </div>
-  </div>
-</footer>
+    </footer>
 
     <script>
       const backToTop = document.getElementById("backToTop");
