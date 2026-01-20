@@ -2,7 +2,7 @@
    Global Styles
    ========================= */
 body {
-  background-color: rgb(245, 239, 225);
+  background-color: rgb(223, 245, 234); /* pastel green */
   color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
   margin: 0;
@@ -268,6 +268,76 @@ img {
   }
 
   .footer-contact {
+    text-align: center;
+  }
+}
+
+/* =========================
+   Parent Guide Introduction
+   ========================= */
+
+.section-intro {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 12px;
+  padding: 30px;
+  background-color: rgb(239, 230, 255); /* pastel purple */
+  box-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+
+/* Intro Image */
+.section-intro img {
+  max-width: 280px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 6px rgb(0, 0, 0);
+}
+
+/* Intro Heading */
+.section-intro h2 {
+  margin-top: 0;
+  color: rgb(0, 0, 0);
+}
+
+/* Intro Paragraphs */
+.section-intro p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+/* List Styling */
+.section-intro ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.section-intro ul li {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* Emphasis Text */
+.section-intro strong {
+  font-weight: bold;
+}
+
+/* =========================
+   Mobile Adjustments
+   ========================= */
+@media (max-width: 600px) {
+  .section-intro {
+    padding: 20px;
+  }
+
+  .section-intro img {
+    float: none !important;
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+  }
+
+  .section-intro h2 {
     text-align: center;
   }
 }
